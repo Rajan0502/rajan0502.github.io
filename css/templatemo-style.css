@@ -5,7 +5,11 @@ Fluid Gallery Template
 http://www.templatemo.com/tm-500-fluid-gallery
 
 */
-
+.tm-img{
+	object-fit: cover;
+    width:25vw;
+    height:230px;
+}
 html.gray .mfp-wrap,
 html.gray .cd-hero,
 html.gray #loader-wrapper {
@@ -623,6 +627,16 @@ figure.effect-sadie:hover p {
 	.tm-copyright-text { margin-top: 0; }
 }
 
+@media only screen and (max-width: 768px) {
+	.navbar-brand img{
+		display: none;
+	}
+	.tm-img{
+		object-fit: cover;
+	    width:100vw !important;
+	    height:230px;
+	}
+}
 @media only screen and (min-width: 768px) {
 
 	.tm-flex { 
